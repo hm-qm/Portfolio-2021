@@ -1,6 +1,6 @@
-## Hesham's Portfolio Project
+# Hesham's Portfolio Project
 
-# Outline
+## Outline
 
 This portfolio project is being started on Week 2 of the \_nology tech accelerator bootcamp course.
 The purpose of this portfolio is to get started early in applying the fundamentals of HTML5 and CSS3 learned so far.
