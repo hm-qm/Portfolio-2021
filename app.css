@@ -1,4 +1,6 @@
-/* Main Content grid */
+/* ----------------------------- */
+/* Main content grid */
+/* ----------------------------- */
 .main-container {
 	display: grid;
 	grid-template-columns: 55% 45%;
@@ -9,14 +11,16 @@
 		"skills skills";
 }
 
-/* Main heading style */
+/* ----------------------------- */
+/* Main header style */
+/* ----------------------------- */
 .main-header {
 	grid-area: intro;
-	background: url(./Images/pattern1.jpg);
-	background-image: linear-gradient(90deg, #ffffff17, #ffffff00);
+	background: url(./Images/pattern2.jpg);
+	/* background-image: linear-gradient(90deg, #ffffff17, #ffffff00); */
 	/* background-image: url(./Images/pattern5.jpg); */
-	/* filter: grayscale(); */
-	background-position: left;
+	filter: grayscale(40%);
+	background-position: center;
 	background-size: cover;
 }
 
@@ -31,11 +35,12 @@
 
 .heading-text h1 {
 	width: 55%;
-	border: 1px solid #ffffff96;
+	border: 1px solid #ffffff10;
 	margin: 120px 10px 0px 17px;
 	font-size: 7rem;
 	font-weight: 600;
 	letter-spacing: 0.3rem;
+	background-color: #ffffff1c;
 	transition: all 0.08s ease-in-out;
 }
 
@@ -45,11 +50,19 @@
 	color: white;
 }
 
+/* Lead text */
 .heading-text p {
+	width: 27.5%;
 	margin: 4px 0px 20px 17px;
+	padding-left: 7px;
 	font-weight: 400;
 	letter-spacing: 0.1rem;
+	background-color: #ffffff1c;
 }
+
+/* ----------------------------- */
+/* Summary section and styling */
+/* ---------------------------- */
 
 .main-intro {
 	grid-area: summary;
@@ -75,6 +88,10 @@
 	color: #ffffff;
 }
 
+/* ----------------------------- */
+/* Skills section and styling */
+/* ----------------------------- */
+
 .skills-container {
 	grid-area: skills;
 	height: 100%;
@@ -93,6 +110,7 @@
 	letter-spacing: 2px;
 }
 
+/* Skill icons table */
 .skills-table {
 	display: flex;
 	align-items: center;
