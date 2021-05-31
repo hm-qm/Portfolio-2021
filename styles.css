@@ -75,7 +75,7 @@ header {
 
 main {
 	grid-area: main;
-	background-image: linear-gradient(170deg, #56909e, #bba793, #b96e28);
+	background-image: linear-gradient(170deg, #56909e, #bba793, #b95128);
 	height: 100%;
 }
 
@@ -119,4 +119,5 @@ footer {
 	font-size: 0.6rem;
 	color: #79797949;
 	letter-spacing: 2px;
+	cursor: default;
 }
