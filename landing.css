@@ -92,6 +92,25 @@
 	color: #0a0a0a;
 }
 
+.summary-btn {
+	padding: 20px;
+	margin-top: 5%;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.3rem;
+	font-weight: 300;
+	background-color: #0a0a0a8a;
+	color: #dbdbdb;
+	border: 1px solid #dbdbdbb7;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: all 0.07s ease-in-out;
+}
+
+.summary-btn:hover {
+	background-color: #0a0a0ab4;
+	box-shadow: 0px 5px 10px 1px #d3d3d323;
+}
+
 /* MEDIA QUERIES BELOW */
 
 /* Smartphones (portrait and landscape) ----------- */
