@@ -1,5 +1,8 @@
-$cardBoxShadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
-$cardHoverShadow: 0 1px 35px 0 rgba(0, 0, 0, 0.3);
+$primary-color: #0a0a0a;
+$secondary-color: #fefeff;
+$tertiary-color: #ab373e;
+$cardBoxShadow: 0 0px 2px 0 rgba(150, 150, 150, 0.11);
+$cardHoverShadow: 0 0px 35px 0 rgba(150, 150, 150, 0.295);
 $cardContentTrnz: all 0.3 cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
 
 .card {
@@ -16,24 +19,14 @@ $cardContentTrnz: all 0.3 cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 718px;
-		height: 320px;
+		width: 678px;
+		height: 300px;
 	}
 
 	&__media {
 		position: relative;
 		width: 300px;
 
-		&::before {
-			content: "";
-			display: block;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background: rgba(0, 0, 0, 0.3);
-		}
 
 		img {
 			display: block;
@@ -42,9 +35,16 @@ $cardContentTrnz: all 0.3 cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
 		}
 	}
 
+	&__header{
+		background-color: transparent;
+	}
+
 	&__content {
 		padding: 40px 25px;
-		color: #999;
+		height: 100%;
+		font-weight: 300;
+		background-color: $primary-color;
+		color: $secondary-color;
 		transition: $cardContentTrnz;
 	}
 
@@ -68,18 +68,41 @@ $cardContentTrnz: all 0.3 cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
 	}
 
 	&__title {
-		color: initial;
+		font-family: "Roboto", sans-serif;
+		color: $secondary-color;
+		font-weight: 400;
+		letter-spacing: 1px;
+		text-transform: uppercase;
 		margin: 0 0 10px;
 		font-size: 20px;
 	}
 
 	&__tools {
-		color: red;
+		color: $tertiary-color;
+		font-size: 1.6rem;
+		width: 60%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__buttons{
+		background-color: transparent;
 	}
 
 	&__btn {
-		background: none;
+		background: $tertiary-color;
+		color: #fff;
+		outline: none;
+		border: 1px solid transparent;
+		text-transform: uppercase;
+		letter-spacing: 2px;
 		padding: 10px 20px;
 		margin-right: 10px;
+		cursor: pointer;
+		transition: all ease-in-out 0.2s;
+
+		&:hover{
+			background-color: #be3f48;
+		}
 	}
 }
