@@ -8,6 +8,7 @@ body {
 	height: 100%;
 	width: 100%;
 	font-family: "Roboto", sans-serif;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -75,7 +76,8 @@ header {
 
 main {
 	grid-area: main;
-	background-image: linear-gradient(170deg, #56909e, #bba793, #b95128);
+	/* background-image: linear-gradient(170deg, #56909e, #bba793, #b95128); */
+	background-image: linear-gradient(170deg, #101b1f, #56909e);
 	height: 100%;
 }
 

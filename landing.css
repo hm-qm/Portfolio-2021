@@ -1,6 +1,7 @@
 /* Home Page Styles */
 .home-g-container {
-	background-image: url(./Images/moshed2.jpg);
+	background-image: linear-gradient(#00000017, #0000003b),
+		url(./Images/moshed2.jpg);
 	background-position: bottom;
 	background-size: cover;
 	height: calc(100vh - 50px);
@@ -74,7 +75,7 @@
 	padding: 10px;
 	color: #bbbbbb;
 	background-color: #0a0a0a;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	font-weight: 300;
 	letter-spacing: 1px;
 }
@@ -90,6 +91,30 @@
 	text-decoration: none;
 	background-color: #dbdbdb;
 	color: #0a0a0a;
+}
+
+.summary-btn {
+	padding: 20px;
+	margin-top: 5%;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.3rem;
+	font-weight: 300;
+	background-color: #0a0a0a8a;
+	color: #dbdbdb;
+	border: 1px solid #dbdbdbb7;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	transition: all 150ms ease-in;
+}
+
+.summary-btn:hover {
+	background-color: #0a0a0ab4;
+	box-shadow: 0px 5px 10px 1px #d3d3d31a;
+	cursor: pointer;
+}
+
+.summary-btn:active {
+	background-color: #0a0a0ad5;
 }
 
 /* MEDIA QUERIES BELOW */
