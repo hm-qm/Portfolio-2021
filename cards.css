@@ -1,0 +1,70 @@
+.card {
+  width: 300px;
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+  box-shadow: 0 1px 35px 0 rgba(0, 0, 0, 0.3);
+}
+.card.card--wide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 718px;
+  height: 320px;
+}
+.card__media {
+  position: relative;
+  width: 300px;
+}
+.card__media::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.card__media img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.card__content {
+  padding: 40px 25px;
+  color: #999;
+  transition: all 0.3 cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+}
+.card--wide .card__content {
+  padding: 20px 20px;
+  width: calc(100% - 300px);
+}
+.card__description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+.card--wide .card__description {
+  max-height: none;
+}
+.card:hover .card__description {
+  max-height: 300px;
+}
+.card__title {
+  color: initial;
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+.card__tools {
+  color: red;
+}
+.card__btn {
+  background: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=cards.css.map */
