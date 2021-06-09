@@ -25,6 +25,14 @@ body {
 header {
 	grid-area: navbar;
 	background-color: #0a0a0a;
+	z-index: 100;
+}
+
+/* Added to navbar with JS when it reaches scroll */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 .nav-container {
@@ -76,7 +84,6 @@ header {
 
 main {
 	grid-area: main;
-	/* background-image: linear-gradient(170deg, #56909e, #bba793, #b95128); */
 	background-image: linear-gradient(170deg, #101b1f, #56909e);
 	height: 100%;
 }
