@@ -1,0 +1,89 @@
+.card {
+  width: 300px;
+  background: #fff;
+  box-shadow: 0 0px 2px 0 rgba(150, 150, 150, 0.11);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+  box-shadow: 0 0px 35px 0 rgba(150, 150, 150, 0.295);
+}
+.card.card--wide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 678px;
+  height: 300px;
+}
+.card__media {
+  position: relative;
+  width: 300px;
+}
+.card__media img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.card__header {
+  background-color: transparent;
+  width: 100%;
+  height: 25%;
+}
+.card__content {
+  padding: 40px 25px;
+  height: 100%;
+  font-weight: 300;
+  background-color: #fefeff;
+  color: #0a0a0a;
+  transition: all 0.3 cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+}
+.card--wide .card__content {
+  padding: 20px 20px;
+  width: calc(100% - 300px);
+}
+.card__description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+.card--wide .card__description {
+  max-height: none;
+}
+.card:hover .card__description {
+  max-height: 300px;
+}
+.card__title {
+  font-family: "Roboto", sans-serif;
+  color: #0a0a0a;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+.card__tools {
+  color: #ab373e;
+  font-size: 1.6rem;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.card__buttons {
+  background-color: transparent;
+}
+.card__btn {
+  background: #ab373e;
+  color: #fff;
+  outline: none;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+.card__btn:hover {
+  background-color: #be3f48;
+}
+
+/*# sourceMappingURL=cards.css.map */

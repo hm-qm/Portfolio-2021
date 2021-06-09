@@ -1,0 +1,64 @@
+$primary-color: #0a0a0a;
+$secondary-color: #fefeff;
+$tertiary-color: #ab373e;
+$background: linear-gradient(rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.1)),
+	url(./Images/aboutmebg.png);
+
+$h1-size: 12rem;
+$h2-size: 6rem;
+
+// About me section
+
+.about {
+	height: calc(100vh);
+	background: linear-gradient(#06171b, #060d1b);
+	background-position: bottom;
+	background-size: cover;
+
+	&__grid {
+		display: grid;
+		grid-template-columns: 1fr 6fr 1fr;
+		grid-template-areas: ". content .";
+	}
+
+	&__content {
+		grid-area: content;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	&__header {
+		width: 100%;
+		margin-top: 40px;
+		display: flex;
+		justify-content: center;
+
+		&-text {
+			margin-bottom: 40px;
+			color: $tertiary-color;
+			font-family: "Roboto", sans-serif;
+			font-size: $h2-size;
+			font-weight: 300;
+			letter-spacing: 0.3rem;
+			text-transform: uppercase;
+		}
+	}
+
+	&__summary {
+		height: auto;
+		width: 100%;
+		padding-bottom: 250px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		&-text {
+			font-family: "Open Sans", sans-serif;
+			font-weight: 300;
+			color: $secondary-color;
+			font-size: 2rem;
+		}
+	}
+}

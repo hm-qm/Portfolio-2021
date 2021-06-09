@@ -1,0 +1,58 @@
+$primary-color: #0a0a0a;
+$secondary-color: #fefeff;
+$tertiary-color: #ab373e;
+$background: linear-gradient(rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.1)),
+	url(./Images/aboutmebg.png);
+
+$h1-size: 12rem;
+$h2-size: 6rem;
+
+// Projects section
+
+.projects {
+	height: calc(100vh);
+	background: linear-gradient(#060d1b, #182341);
+	background-position: bottom;
+	background-size: cover;
+
+	&__grid {
+		display: grid;
+		grid-template-columns: 1fr 6fr 1fr;
+		grid-template-areas: ". content .";
+	}
+
+	&__content {
+		grid-area: content;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	&__header {
+		grid-area: header;
+		width: 100%;
+		margin-top: 40px;
+		display: flex;
+		justify-content: center;
+
+		&-text {
+			margin-bottom: 40px;
+			color: $tertiary-color;
+			font-family: "Roboto", sans-serif;
+			font-size: $h2-size;
+			font-weight: 300;
+			letter-spacing: 0.3rem;
+			text-transform: uppercase;
+		}
+	}
+
+	&__container {
+		grid-area: projects;
+		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+}
+

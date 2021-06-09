@@ -1,0 +1,108 @@
+$primary-color: #0a0a0a;
+$secondary-color: #fefeff;
+$tertiary-color: #ab373e;
+$cardBoxShadow: 0 0px 2px 0 rgba(150, 150, 150, 0.11);
+$cardHoverShadow: 0 0px 35px 0 rgba(150, 150, 150, 0.295);
+$cardContentTrnz: all 0.3 cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+
+.card {
+	width: 300px;
+	background: #fff;
+	box-shadow: $cardBoxShadow;
+	transition: box-shadow 0.3s ease-in-out;
+
+	&:hover {
+		box-shadow: $cardHoverShadow;
+	}
+
+	&.card--wide {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 678px;
+		height: 300px;
+	}
+
+	&__media {
+		position: relative;
+		width: 300px;
+
+
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	&__header{
+		background-color: transparent;
+	}
+
+	&__content {
+		padding: 40px 25px;
+		height: 100%;
+		font-weight: 300;
+		background-color: $primary-color;
+		color: $secondary-color;
+		transition: $cardContentTrnz;
+	}
+
+	&--wide .card__content {
+		padding: 20px 20px;
+		width: calc(100% - 300px);
+	}
+
+	&__description {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease-in-out;
+	}
+
+	&--wide .card__description {
+		max-height: none;
+	}
+
+	&:hover .card__description {
+		max-height: 300px;
+	}
+
+	&__title {
+		font-family: "Roboto", sans-serif;
+		color: $secondary-color;
+		font-weight: 400;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		margin: 0 0 10px;
+		font-size: 20px;
+	}
+
+	&__tools {
+		color: $tertiary-color;
+		font-size: 1.6rem;
+		width: 60%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__buttons{
+		background-color: transparent;
+	}
+
+	&__btn {
+		background: $tertiary-color;
+		color: #fff;
+		outline: none;
+		border: 1px solid transparent;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		padding: 10px 20px;
+		margin-right: 10px;
+		cursor: pointer;
+		transition: all ease-in-out 0.2s;
+
+		&:hover{
+			background-color: #be3f48;
+		}
+	}
+}

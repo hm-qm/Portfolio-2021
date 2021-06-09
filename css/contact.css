@@ -1,0 +1,88 @@
+.contact {
+  height: calc(100vh + 100px);
+  background: linear-gradient(#182341, #0f1629, #0e0e0e);
+  background-position: bottom;
+  background-size: cover;
+}
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-areas: ". content .";
+}
+.contact__content {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.contact__header {
+  grid-area: header;
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.contact__header-text {
+  margin-bottom: 40px;
+  color: #ab373e;
+  font-family: "Roboto", sans-serif;
+  font-size: 6rem;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+.contact__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact__form {
+  margin-top: 100px;
+  height: 70%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact__form--label {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 4px;
+  font-size: 2.5rem;
+  color: #ab373e;
+}
+.contact__form--input {
+  margin-bottom: 20px;
+  color: #ab373e;
+  font-size: 2rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ab373e;
+}
+.contact__form--input::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  color: #ab373e;
+  opacity: 50%;
+}
+.contact__form--btn {
+  width: 100%;
+  background: transparent;
+  padding: 15px 20px;
+  border: 1px solid #ab373e;
+  color: #ab373e;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all ease-in-out 0.15s;
+}
+.contact__form--btn:hover {
+  background-color: #ab373e;
+  color: #fefeff;
+}
+
+/*# sourceMappingURL=contact.css.map */
