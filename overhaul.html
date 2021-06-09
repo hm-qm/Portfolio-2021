@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cards.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="landing.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="projects.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/landing.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/contact.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -23,9 +23,9 @@
 </head>
 
 <body>
-    <header>
+    <header id="navBar">
         <nav class="nav-container">
-            <span class="nav-logo"><a href="/index.html">HM//QM.</a></span>
+            <span class="nav-logo"><a href="#Home">HM//QM.</a></span>
             <ul class="nav-list">
                 <li class="nav-item"><a href="#About">About</a></li>
                 <li class="nav-item"><a href="#Projects">Projects</a></li>
@@ -34,7 +34,7 @@
         </nav>
     </header>
     <main>
-        <article class="home-g-container">
+        <article id="Home" class="home-g-container">
             <section class="home-header">
                 <div class="header-text">
                     <span>Hey I'm..</span>
@@ -202,13 +202,14 @@
                     <h2 class="contact__header-text">Contact</h2>
                 </div>
                 <div class="contact__container">
-                    <form class="contact__form" action="">
+                    <form class="contact__form" action="https://formspree.io/f/xnqlvqaa" method="post">
                         <label class="contact__form--label" for="name">Name</label>
                         <input class="contact__form--input" type="text" name="name" id="name">
                         <label class="contact__form--label" for="email">Email</label>
                         <input class="contact__form--input" type="email" name="email" id="email">
                         <label class="contact__form--label" for="msg"></label>
-                        <textarea class="contact__form--input" name="msg" id="msg" cols="30" rows="5" placeholder="Leave a message"></textarea>
+                        <textarea class="contact__form--input" name="msg" id="msg" cols="30" rows="5"
+                            placeholder="..."></textarea>
 
                         <button class="contact__form--btn" type="submit">Send</button>
                     </form>
@@ -234,6 +235,8 @@
             <span class="footer-text">Created by Hesham Qasem | 2021</span>
         </div>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
